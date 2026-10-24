@@ -19,6 +19,22 @@ into a review tool: **every author draws on their own layer** (all layers are sh
 - `<livewire:image-annotations-pro::modal />` + `<x-image-annotations-pro::open-button>`; signed source tokens so any place can ask for the editor.
 - Events (`PinCommentAdded`, `PinThreadResolved`, `PinThreadReopened`) for a CRM or notifications.
 
+## Free or Pro?
+
+| | [Image Annotations](https://github.com/asignua/filament-image-annotations) (free, MIT) | [Image Annotations Pro](https://github.com/asignua/filament-image-annotations-pro-docs) (€69 / €169) |
+| --- | :---: | :---: |
+| Non-destructive vector layer over any image (Media Library, `FileUpload`, own `ImageSource`) | ✓ | ✓ |
+| Editor: arrow, rectangle, ellipse, polygon, line, pen, highlighter, text; colours, widths, undo/redo | ✓ | ✓ |
+| Read-only view in the panel and on public pages, sanitised on save | ✓ | ✓ |
+| One layer per author, all shown together, colour-coded, each with a toggle | | ✓ |
+| Numbered pins with comment threads, resolve and reopen | | ✓ |
+| Threads panel next to the editor and next to every annotated image | | ✓ |
+| Standalone editor modal opened from any page with one browser event (signed source tokens) | | ✓ |
+| Events for a CRM or notifications (`PinCommentAdded`, `PinThreadResolved`, ...) | | ✓ |
+| Annotate image attachments in Filament Chat Pro | | ✓ |
+
+Image Annotations Pro is an add-on: it requires the free package and builds on its seams, so existing layers carry over.
+
 ## Screenshots
 
 ![The editor modal: your own layer, the other authors as toggles, and the pins panel](https://raw.githubusercontent.com/asignua/filament-image-annotations-pro-docs/main/art/editor.jpg)
@@ -210,6 +226,7 @@ Published config (`php artisan vendor:publish --tag=filament-image-annotations-p
 | `chat.enabled` | `true` | the Chat Pro integration (only used when Chat Pro is installed) |
 | `chat.annotate` | `participants` | `sender`: only the author of the message may draw |
 | `chat.badge` | `true` | marks counter on thumbnails |
+| `chat.marks` | `true` | draw the marks over the thumbnails themselves |
 | `chat.modal` | `true` | put the editor modal on panel pages that carry the chat |
 
 Authorization is the free package's (`ImageAnnotations::authorizeUsing()` or the owner's policy: `view` to see and comment,

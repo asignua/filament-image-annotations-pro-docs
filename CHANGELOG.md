@@ -2,6 +2,13 @@
 
 All notable changes to `asignua/filament-image-annotations-pro` are documented here.
 
+## v1.1.0 - 2026-10-13
+
+- Added: the marks are drawn over the chat thumbnails themselves (cropped like the thumbnail), next to the badge; new config `chat.marks` (default `true`). Saving or deleting marks re-renders the chat at once for whoever saved them and for the other members through the chat's «updated» event (`ChatService::changed()`).
+- Changed: the editor modal opens above the chat slide-over (still below notifications); the pins panel is framed.
+- Fixed: `ChatAttachmentImageSource` loads the message's conversation instead of lazy loading it (a crash under `Model::preventLazyLoading()`).
+- Requires `asignua/filament-image-annotations` `^1.2` (the viewer overlay mode) and, with the chat, `asignua/filament-chat` `^1.5` (`ChatService::changed()`).
+
 ## v1.0.2 - 2026-10-12
 
 - Licence terms (`LICENSE.md`): the commercial licence that comes with an Anystack licence key; prices in the README.
