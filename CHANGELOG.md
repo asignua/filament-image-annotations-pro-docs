@@ -2,6 +2,10 @@
 
 All notable changes to `asignua/filament-image-annotations-pro` are documented here.
 
+## v1.1.1 - 2026-10-25
+
+- Screenshots and the cover carry the «made in asign» mark; README shows the Stand With Ukraine badge.
+
 ## v1.1.0 - 2026-10-13
 
 - Added: the marks are drawn over the chat thumbnails themselves (cropped like the thumbnail), next to the badge; new config `chat.marks` (default `true`). Saving or deleting marks re-renders the chat at once for whoever saved them and for the other members through the chat's «updated» event (`ChatService::changed()`).
