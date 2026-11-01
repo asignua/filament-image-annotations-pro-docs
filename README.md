@@ -281,6 +281,15 @@ APP_URL=http://localhost:8011 vendor/bin/testbench serve --host=0.0.0.0 --port=8
 
 Log in at `/admin` as `alice@example.com` / `password` (or `bob@example.com`, two browsers), then open `/demo`. Use your own port in both `APP_URL` and `--port`.
 
+## More plugins by asign
+
+- [Image Annotations](https://filamentphp.com/plugins/asign-image-annotations) — draw and annotate images
+- [Image Meta](https://filamentphp.com/plugins/asign-image-meta) — alt text, caption and focal point for uploads
+- [Rich Editor Toolkit](https://filamentphp.com/plugins/asign-rich-editor-toolkit) — paste cleanup, attributes and video links in the rich editor
+- [Themes](https://filamentphp.com/plugins/asign-themes) — per-user and per-panel colour themes
+
+All plugins: <https://filamentphp.com/plugins?q=asign>
+
 ## License
 
 Commercial, see [LICENSE.md](https://github.com/asignua/filament-image-annotations-pro-docs/blob/main/LICENSE.md).
