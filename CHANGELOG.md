@@ -2,6 +2,10 @@
 
 All notable changes to `asignua/filament-image-annotations-pro` are documented here.
 
+## v1.1.2 - 2026-11-07
+
+- Fixed: `ReferenceError: imageAnnotationsViewer is not defined` in the console when the first marked thumbnail arrived on a chat page in a Livewire morph (`x-load` is skipped while Alpine clones a morph, `x-data` is not). The viewer now loads with every page that carries the chat.
+
 ## v1.1.1 - 2026-10-25
 
 - Screenshots and the cover carry the «made in asign» mark; README shows the Stand With Ukraine badge.
